@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero section với ảnh nền */
+        .hero {
+            height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+            background-image: url('images/2.png'); /* Đường dẫn đến ảnh của bạn */
+            background-size: cover; /* Ảnh sẽ phủ kín container */
+            background-position: center; /* Căn giữa ảnh */
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white; /* Màu chữ trắng để dễ đọc trên nền ảnh */
+        }
+
+        /* Thêm lớp overlay để làm tối ảnh nền (tùy chọn) */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+            z-index: 1;
+        }
+
+        /* Đảm bảo nội dung nằm trên lớp overlay */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero a {
+
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chào mừng đến với Website cùng nhau học tập!</h1>
+            <a href="/index.html">Khám phá những điều tuyệt vời tại đây</a>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <p>Email: <a href="http://phamhoaithuong7008@gmail.com" target="_blank">phamhoaithuong7008@gmail.com</a></p>
+            <p>Điện thoại: 0123 456 789</p>
+            <p>&copy; 2024 Blog Cá Nhân</p>
+        </div>
+    </footer>
+</body>
+</html>

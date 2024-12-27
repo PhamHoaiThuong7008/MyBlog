@@ -1,0 +1,184 @@
+/* Đặt kiểu dáng chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Căn đều về bên trái */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about-content img {
+    margin-right: 20px; /* Khoảng cách giữa ảnh và văn bản */
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 2; /* Đảm bảo nội dung chiếm không gian còn lại */
+}
+
+.about-text p {
+    margin: 5px 0;
+    font-size: 30px;  /* Điều chỉnh kích thước chữ */
+    font-weight: bold;
+}
+.about-text p1 {
+    margin: 5px 0;
+    font-size: 30px;  /* Điều chỉnh kích thước chữ */
+}
+
+
+#posts p {
+    font-size: 26px;  /* Điều chỉnh kích thước chữ cho đoạn văn */
+    line-height: 1.6;  /* Điều chỉnh khoảng cách giữa các dòng */
+    text-align: justify;
+    text-indent: 30px;
+}
+
+#posts img {
+    margin-left: 20px;  /* Tạo khoảng cách giữa ảnh và văn bản */
+}
+
+#study .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+    grid-template-rows: repeat(3, auto); /* Chia thành 3 hàng, tự động dựa vào chiều cao nội dung */
+    gap: 20px; 
+    padding: 20px;
+}
+
+#study .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#study .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    animation: blink 0.5s alternate infinite;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 6px 10px rgba(0, 0, 255, 0.4);
+    }
+}
+
+#study .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+#study .card-body {
+    padding: 15px;
+}
+
+#study .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#study .card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#study .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#study .btn:hover {
+    background-color: #0056b3;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
